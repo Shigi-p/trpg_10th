@@ -60,7 +60,7 @@
     "build:dev": "webpack --mode=development",
     "build:prod": "webpack --mode=production --node-env=production",
     "watch": "webpack --watch",
-    "serve": "webpack serve"
+    "start": "webpack serve --inline --open"
   },
   "repository": {
     "type": "git",
@@ -74,8 +74,10 @@
   "homepage": "https://github.com/Shigi-p/trpg_10th#readme",
   "devDependencies": {
     "@webpack-cli/generators": "^2.2.0",
+    "copy-webpack-plugin": "^6.4.1",
     "css-loader": "^5.2.6",
     "eslint": "^7.28.0",
+    "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.3.1",
     "mini-css-extract-plugin": "^1.6.0",
     "prettier": "^2.3.1",

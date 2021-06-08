@@ -3,6 +3,7 @@
 const path = require("path");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const RouteDataMapper = require("webpack-route-data-mapper");
+const CopyWebpackPlugin = require("copy-webpack-plugin");
 
 const isProduction = process.env.NODE_ENV == "production";
 
@@ -29,6 +30,9 @@ const config = {
     // Add your plugins here
     // Learn more about plugins from https://webpack.js.org/configuration/plugins/
     ...htmlTemplates,
+    new CopyWebpackPlugin({
+      patterns: [{ from: "src/img", to: "img" }],
+    }),
   ],
   module: {
     rules: [
@@ -63,6 +67,17 @@ const config = {
             options: {
               pretty: true,
               root: path.resolve(__dirname, "src/pages"),
+            },
+          },
+        ],
+      },
+      {
+        test: /\.(png|jpe?g|gif)$/i,
+        use: [
+          {
+            loader: "file-loader",
+            options: {
+              name: "[path][name].[ext]",
             },
           },
         ],
