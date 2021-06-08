@@ -36,6 +36,7 @@
     "neo-async": "^2.6.2",
     "node-releases": "^1.1.72",
     "p-limit": "^3.1.0",
+    "pug": "^3.0.2",
     "punycode": "^2.1.1",
     "randombytes": "^2.1.0",
     "safe-buffer": "^5.2.1",
@@ -65,7 +66,7 @@
     "type": "git",
     "url": "git+https://github.com/Shigi-p/trpg_10th.git"
   },
-  "author": "",
+  "author": "Shigi-p",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Shigi-p/trpg_10th/issues"
@@ -78,13 +79,15 @@
     "html-webpack-plugin": "^5.3.1",
     "mini-css-extract-plugin": "^1.6.0",
     "prettier": "^2.3.1",
+    "pug-loader": "^2.4.0",
     "sass": "^1.34.1",
-    "sass-loader": "^12.0.0",
+    "sass-loader": "^10.2.0",
     "style-loader": "^2.0.0",
-    "ts-loader": "^9.2.3",
+    "ts-loader": "^8.3.0",
     "typescript": "^4.3.2",
-    "webpack": "^5.38.1",
+    "webpack": "^4.46.0",
     "webpack-cli": "^4.7.2",
-    "webpack-dev-server": "^3.11.2"
+    "webpack-dev-server": "^3.11.2",
+    "webpack-route-data-mapper": "^2.2.2"
   }
 }
