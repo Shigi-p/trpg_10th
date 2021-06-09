@@ -47,7 +47,7 @@ const config = {
       },
       {
         test: /\.s[ac]ss$/i,
-        use: [stylesHandler, "css-loader", "sass-loader"],
+        use: [stylesHandler, "css-loader", "sass-loader", "import-glob-loader"],
       },
       // {
       //   test: /\.(eot|svg|ttf|woff|woff2|png|jpg|gif)$/i,
