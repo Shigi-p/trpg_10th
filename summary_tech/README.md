@@ -4,6 +4,7 @@
     - [webpack.config.js](#webpackconfigjs)
     - [eslint系](#eslint系)
     - [とにかくbuildが成功しない事件](#とにかくbuildが成功しない事件)
+    - [scssのimportに正規表現を用いる](#scssのimportに正規表現を用いる)
 
 ---
 
@@ -33,3 +34,7 @@ nodeのversionによっては動かないこともあるのでnodenvで調整
 - 5系から4系に戻すと依存関係がごちゃごちゃになる
 - 結局4系でinitしなおす
 - 4系に合うモジュールのバージョンまでちくちく下げてinstallし直す(アホか？)
+
+### scssのimportに正規表現を用いる
+
+`import-glob-loader`というローダーを追加して使う模様。
