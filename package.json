@@ -46,6 +46,7 @@
     "source-map": "^0.6.1",
     "source-map-support": "^0.5.19",
     "supports-color": "^8.1.1",
+    "swiper": "^6.7.0",
     "tapable": "^2.2.0",
     "terser": "^5.7.0",
     "terser-webpack-plugin": "^5.1.3",
