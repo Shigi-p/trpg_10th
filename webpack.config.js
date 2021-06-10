@@ -31,7 +31,7 @@ const config = {
     // Learn more about plugins from https://webpack.js.org/configuration/plugins/
     ...htmlTemplates,
     new CopyWebpackPlugin({
-      patterns: [{ from: "src/img", to: "img" }],
+      patterns: [{ from: "src/img", to: "img", noErrorOnMissing: true }],
     }),
   ],
   module: {
