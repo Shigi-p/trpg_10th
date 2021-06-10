@@ -5,6 +5,7 @@
     - [eslint系](#eslint系)
     - [とにかくbuildが成功しない事件](#とにかくbuildが成功しない事件)
     - [scssのimportに正規表現を用いる](#scssのimportに正規表現を用いる)
+    - [なんかしらないがswiperのscrollbarが動かない問題](#なんかしらないがswiperのscrollbarが動かない問題)
 
 ---
 
@@ -38,3 +39,22 @@ nodeのversionによっては動かないこともあるのでnodenvで調整
 ### scssのimportに正規表現を用いる
 
 `import-glob-loader`というローダーを追加して使う模様。
+
+### なんかしらないがswiperのscrollbarが動かない問題
+
+webpackを使用して使う分にはimport文を工夫しないといけないらしい。
+
+悪い例
+```
+import Swiper from "swiper";
+```
+
+良い例
+
+```
+import Swiper, { Scrollbar } from "swiper";
+
+Swiper.use([Scrollbar]);
+```
+
+[ここ](https://flex-box.net/swiper-npm/)に乗ってた。
