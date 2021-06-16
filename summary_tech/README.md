@@ -6,6 +6,7 @@
     - [とにかくbuildが成功しない事件](#とにかくbuildが成功しない事件)
     - [scssのimportに正規表現を用いる](#scssのimportに正規表現を用いる)
     - [なんかしらないがswiperのscrollbarが動かない問題](#なんかしらないがswiperのscrollbarが動かない問題)
+    - [あたらしいコミットフォーマッターをみつけた](#あたらしいコミットフォーマッターをみつけた)
 
 ---
 
@@ -58,3 +59,11 @@ Swiper.use([Scrollbar]);
 ```
 
 [ここ](https://flex-box.net/swiper-npm/)に乗ってた。
+
+### あたらしいコミットフォーマッターをみつけた
+
+[これ](https://dev.classmethod.jp/articles/commitizen/)
+
+自分のやつをこれによせていきたい所存
+
+追記 寄せた
