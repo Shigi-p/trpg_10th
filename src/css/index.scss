@@ -1,11 +1,14 @@
 @import "~sanitize.css";
 
 @import "../components/**/*.scss";
+@import "./variables.scss";
+@import "./util.scss";
 
 html {
   font-size: 10px;
 }
 
 body {
+  color: $black;
   margin: 0;
 }
