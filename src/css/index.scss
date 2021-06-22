@@ -1,8 +1,10 @@
 @import "~sanitize.css";
 
-@import "../components/**/*.scss";
 @import "./variables.scss";
 @import "./util.scss";
+@import "./mixin.scss";
+
+@import "../components/**/*.scss";
 
 html {
   font-size: 10px;
