@@ -1,0 +1,17 @@
+.o-header {
+  display: flex;
+  justify-content: space-between;
+
+  &__contents {
+    display: flex;
+
+    @include sp-layout() {
+      display: none;
+    }
+  }
+
+  &__humberger {
+    align-items: center;
+    vertical-align: middle;
+  }
+}

@@ -1,0 +1,10 @@
+include ../a-smalltext/a-smalltext
+
+mixin o-header(data = {})
+  header.o-header
+    nav.o-header__contents
+      +a-smalltext() content 1
+      +a-smalltext() content 2
+      +a-smalltext() content 3
+    .o-header__humberger
+      | 🍔
