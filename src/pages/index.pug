@@ -1,7 +1,5 @@
-include ../components/a-smalltext/a-smalltext
-include ../components/a-mediumtext/a-mediumtext
-include ../components/a-largetext/a-largetext
 include ../components/o-header/o-header
+include ../components/a-text/a-text
 
 html
   head
@@ -12,35 +10,31 @@ html
     link(href='https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap', rel='stylesheet')
     meta(name='viewport', content="width=device-width,initial-scale=1.0,minimum-scale=1.0")
   body
-    +a-smalltext() 
-      | small text
-    +a-mediumtext()
-      | medium text
-    +a-largetext()
-      | large text
     +o-header
+    +a-text({size: 'small'})
+      | すもーるなてきすと
 
     .swiper-container
       .swiper-wrapper
         .swiper-slide
-          +a-mediumtext()
+          +a-text({size: 'medium'})
             | slide1
         .swiper-slide
-          +a-mediumtext()
+          +a-text({size: 'medium'})
             | slide2
         .swiper-slide
-          +a-mediumtext()
+          +a-text({size: 'medium'})
             | slide3
         .swiper-slide
-          +a-mediumtext()
+          +a-text({size: 'medium'})
             | slide4
         .swiper-slide
-          +a-mediumtext()
+          +a-text({size: 'medium'})
             | slide5
         .swiper-slide
-          +a-mediumtext()
+          +a-text({size: 'medium'})
             | slide6
         .swiper-slide
-          +a-mediumtext()
+          +a-text({size: 'medium'})
             | slide7
       .swiper-scrollbar
