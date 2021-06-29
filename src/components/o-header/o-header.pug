@@ -1,10 +1,10 @@
-include ../a-smalltext/a-smalltext
+include ../a-text/a-text
 
 mixin o-header(data = {})
   header.o-header
     nav.o-header__contents
-      +a-smalltext() content 1
-      +a-smalltext() content 2
-      +a-smalltext() content 3
+      +a-text({size: 'small'}) content 1
+      +a-text({size: 'small'}) content 2
+      +a-text({size: 'small'}) content 3
     .o-header__humberger
       | 🍔
