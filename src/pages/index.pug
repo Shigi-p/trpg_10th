@@ -1,5 +1,6 @@
 include ../components/o-header/o-header
 include ../components/a-text/a-text
+include ../components/a-link/a-link
 
 html
   head
@@ -12,7 +13,8 @@ html
   body
     +o-header
     +a-text({size: 'small'})
-      | すもーるなてきすと
+      +a-link({href: 'https://www.google.com/?hl=ja', blank: true})
+        | すもーるなてきすとでりんくだよ
 
     .swiper-container
       .swiper-wrapper
