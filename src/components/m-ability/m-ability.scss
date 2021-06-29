@@ -1,0 +1,13 @@
+.m-ability {
+  display: flex;
+  justify-content: center;
+
+  &-name {
+    text-align: right;
+
+    &:after {
+      content: ":";
+      margin: 0 5px;
+    }
+  }
+}

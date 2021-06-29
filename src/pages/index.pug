@@ -1,6 +1,8 @@
 include ../components/o-header/o-header
 include ../components/a-text/a-text
 include ../components/a-link/a-link
+include ../components/m-ability/m-ability
+include ../components/o-abilitylist/o-abilitylist
 
 html
   head
@@ -15,6 +17,19 @@ html
     +a-text({size: 'small', hasMarginTop: true})
       +a-link({href: 'https://www.google.com/?hl=ja', blank: true})
         | すもーるなてきすとでりんくだよ
+
+    +m-ability({
+      name: '聞き耳',
+      value: 80
+    })
+
+    +o-abilitylist({
+      list: [
+        {name: '聞き耳', value: 80},
+        {name: '目星', value: 50},
+        {name: 'アイデア', value: 70}
+      ]
+    })
 
     .swiper-container
       .swiper-wrapper

@@ -1,0 +1,8 @@
+include ../a-text/a-text
+
+mixin m-ability(data = {})
+  .m-ability
+    +a-text({size: 'small', class: 'm-ability-name'})
+      | #{data.name}
+    +a-text({size: 'small', class: 'm-ability-value'})
+      | #{data.value}%

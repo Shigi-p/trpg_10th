@@ -1,0 +1,6 @@
+include ../m-ability/m-ability
+
+mixin o-abilitylist(data = {})
+  .o-abilitylist
+    each ability in data.list
+      +m-ability({name: ability.name, value: ability.value})

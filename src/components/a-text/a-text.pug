@@ -1,11 +1,11 @@
 mixin a-text(data = {})
   if (data.size='small')
-    p.a-text.a-text-small(data-color=data.color && data.color data-has-margin-top=data.hasMarginTop && data.hasMarginTop)
+    p.a-text.a-text-small(class=data.class && data.class data-color=data.color && data.color data-has-margin-top=data.hasMarginTop && data.hasMarginTop)
       block
   else if (data.size='medium')
-    p.a-text.a-text-medium(data-color=data.color && data.color data-has-margin-top=data.hasMarginTop && data.hasMarginTop)
+    p.a-text.a-text-medium(class=data.class && data.class data-color=data.color && data.color data-has-margin-top=data.hasMarginTop && data.hasMarginTop)
       block
   else if (data.size="large")
-    p.a-text.a-text-large(data-color=data.color && data.color data-has-margin-top=data.hasMarginTop && data.hasMarginTop)
+    p.a-text.a-text-large(class=data.class && data.class data-color=data.color && data.color data-has-margin-top=data.hasMarginTop && data.hasMarginTop)
       block
 
