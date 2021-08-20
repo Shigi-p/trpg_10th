@@ -1,6 +1,14 @@
 import Swiper, { Scrollbar } from "swiper";
 import "swiper/swiper-bundle.css";
 
+if (!process.env.API_KEY) {
+  throw new Error('API_KEY must be set.')
+}
+
+export const API_KEY = process.env.API_KEY
+
+import getScenarios from './getscenarios';
+
 Swiper.use([Scrollbar]);
 
 const swiper = new Swiper(".swiper-container", {
@@ -13,3 +21,5 @@ const swiper = new Swiper(".swiper-container", {
 });
 
 console.log("Hello World!");
+
+getScenarios();
