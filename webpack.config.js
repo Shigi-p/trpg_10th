@@ -4,6 +4,7 @@ const path = require("path");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const RouteDataMapper = require("webpack-route-data-mapper");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
+const Dotenv = require('dotenv-webpack');
 
 const isProduction = process.env.NODE_ENV == "production";
 
@@ -33,6 +34,7 @@ const config = {
     new CopyWebpackPlugin({
       patterns: [{ from: "src/img", to: "img", noErrorOnMissing: true }],
     }),
+    new Dotenv({ systemvars: true }),
   ],
   module: {
     rules: [
