@@ -32,6 +32,7 @@
     "json-schema-traverse": "^0.4.1",
     "loader-runner": "^4.2.0",
     "merge-stream": "^2.0.0",
+    "microcms-js-sdk": "^1.2.0",
     "mime-db": "^1.48.0",
     "mime-types": "^2.1.31",
     "neo-async": "^2.6.2",
