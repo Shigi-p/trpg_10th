@@ -1,5 +1,0 @@
-@mixin sp-layout() {
-  @media (max-width: $break-point - 1) {
-    @content;
-  }
-}
