@@ -2,11 +2,12 @@
   - [環境構築系](#環境構築系)
     - [package.json](#packagejson)
     - [webpack.config.js](#webpackconfigjs)
-    - [eslint系](#eslint系)
-    - [とにかくbuildが成功しない事件](#とにかくbuildが成功しない事件)
-    - [scssのimportに正規表現を用いる](#scssのimportに正規表現を用いる)
-    - [なんかしらないがswiperのscrollbarが動かない問題](#なんかしらないがswiperのscrollbarが動かない問題)
+    - [eslint 系](#eslint-系)
+    - [とにかく build が成功しない事件](#とにかく-build-が成功しない事件)
+    - [scss の import に正規表現を用いる](#scss-の-import-に正規表現を用いる)
+    - [なんかしらないが swiper の scrollbar が動かない問題](#なんかしらないが-swiper-の-scrollbar-が動かない問題)
     - [あたらしいコミットフォーマッターをみつけた](#あたらしいコミットフォーマッターをみつけた)
+- [vite で作り無し編](#vite-で作り無し編)
 
 ---
 
@@ -16,36 +17,37 @@
 
 ### package.json
 
-```npm init```
+`npm init`
 
 ### webpack.config.js
 
-```webpack init```
+`webpack init`
 
-nodeのversionによっては動かないこともあるのでnodenvで調整
+node の version によっては動かないこともあるので nodenv で調整
 
-### eslint系
+### eslint 系
 
-```eslint init```
+`eslint init`
 
-**全部initじゃねーか！！！！**
+**全部 init じゃねーか！！！！**
 
-### とにかくbuildが成功しない事件
+### とにかく build が成功しない事件
 
-- webpackが5系だった
-- 5系から4系に戻すと依存関係がごちゃごちゃになる
-- 結局4系でinitしなおす
-- 4系に合うモジュールのバージョンまでちくちく下げてinstallし直す(アホか？)
+- webpack が 5 系だった
+- 5 系から 4 系に戻すと依存関係がごちゃごちゃになる
+- 結局 4 系で init しなおす
+- 4 系に合うモジュールのバージョンまでちくちく下げて install し直す(アホか？)
 
-### scssのimportに正規表現を用いる
+### scss の import に正規表現を用いる
 
 `import-glob-loader`というローダーを追加して使う模様。
 
-### なんかしらないがswiperのscrollbarが動かない問題
+### なんかしらないが swiper の scrollbar が動かない問題
 
-webpackを使用して使う分にはimport文を工夫しないといけないらしい。
+webpack を使用して使う分には import 文を工夫しないといけないらしい。
 
 悪い例
+
 ```
 import Swiper from "swiper";
 ```
@@ -67,3 +69,5 @@ Swiper.use([Scrollbar]);
 自分のやつをこれによせていきたい所存
 
 追記 寄せた
+
+# vite で作り無し編

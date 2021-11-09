@@ -1,6 +1,6 @@
 node_modules
 .DS_Store
-.vscode
-src/img
-dist/img
+dist
+dist-ssr
+*.local
 .env
