@@ -1,0 +1,10 @@
+version: "3.9"
+
+services:
+  node:
+    build: ./
+    volumes:
+      - ./node:/usr/src/app:cached
+    command: sh -c "yarn dev"
+    ports:
+      - "3000:3000"
